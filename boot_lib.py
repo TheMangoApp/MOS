@@ -75,3 +75,4 @@ def ota():
             return "RELOAD"
     else:
         print("Up to date!")
+        return "OTA__OK"
