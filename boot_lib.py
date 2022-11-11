@@ -63,8 +63,9 @@ def ota():
 
     gc.collect()
     gc.enable()
-    OTA = Updater(user="", repo="", branch="stable", working_dir="src", files=[
-                          "main.py", "boot.py", "boot_lib.py"])
+    OTA = Updater(user="TheMangoApp", repo="MOS", branch="main", working_dir="/", files=[
+                          #"main.py",
+                          "boot.py", "boot_lib.py"])
 
     if OTA.fetch():
         print("A newer version is available!")
